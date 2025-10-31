@@ -3,7 +3,9 @@ import { Flex, Text, Title, Divider } from '@mantine/core';
 const AboutUs = () => {
   return (
     <Flex
-      p='lg'
+      px='lg'
+      py='xl'
+      mb='xl'
       direction='column'
       justify='center'
       align='center'>
@@ -14,12 +16,12 @@ const AboutUs = () => {
         About us
       </Title>
       <Divider
-        my='md'
+        my='lg'
         size='lg'
         color='ocean.5'
         w='50%'
       />
-      <Text c='ocean.5' fz='md' ta='center' maw='70%'>
+      <Text c='ocean.5' fz='lg' ta='center' maw='70%'>
         Welcome to Didyma House, your serene retreat nestled in the heart of Epanomi
         Beach. Our mission is to provide a tranquil escape where you can unwind and
         reconnect with nature. Enjoy stunning sea views, modern amenities, and warm

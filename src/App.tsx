@@ -1,8 +1,10 @@
-import { AppShell, Box, Image } from '@mantine/core';
+import { AppShell, Box } from '@mantine/core';
 import Header from './components/Header/Header';
 import AboutUs from './components/AboutUsSection/AboutUs';
 import Gallery from './components/Gallery/Gallery';
 import MaintenancePage from './components/Maintenance/Maintenance';
+import HeroCarousel from './components/HeroCarousel/HeroCarousel';
+import { HERO_CAROUSEL_IMAGES } from './constants/constants';
 
 function App() {
   const isUnderMaintenance = false; // Change this to true to show the maintenance page
@@ -12,14 +14,12 @@ function App() {
   }
 
   return (
-    <AppShell
-      header={{ height: 'auto' }}
-      >
+    <AppShell header={{ height: 'auto' }}>
       <AppShell.Header withBorder={false}>
         <Header />
       </AppShell.Header>
       <AppShell.Main>
-        <Image src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ_7Ztx4Ob7o-P7PiSJyIh2KYxouh-M_9HoQ&s' alt='Description' fit='cover' w='100%' h={800} />
+        <HeroCarousel images={HERO_CAROUSEL_IMAGES} />
         <Box
           px='100px'
           py='lg'>

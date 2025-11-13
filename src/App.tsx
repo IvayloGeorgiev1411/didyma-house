@@ -5,7 +5,7 @@ import Gallery from './components/Gallery/Gallery';
 import MaintenancePage from './components/Maintenance/Maintenance';
 
 function App() {
-  const isUnderMaintenance = true; // Change this to true to show the maintenance page
+  const isUnderMaintenance = false; // Change this to true to show the maintenance page
   
   if (isUnderMaintenance) {
     return <MaintenancePage />;

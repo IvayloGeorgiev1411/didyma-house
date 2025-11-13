@@ -17,7 +17,7 @@ const HeroCarousel: React.FC<HeroCarouselProps> = ({ images }) => {
     autoplay: true,
     autoplaySpeed: 4000,
     fade: true,
-    arrows: false, // optional: hide arrows for a clean hero look
+    arrows: false,
     pauseOnHover: false,
   };
 

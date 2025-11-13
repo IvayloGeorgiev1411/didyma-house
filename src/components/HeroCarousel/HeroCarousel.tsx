@@ -9,7 +9,7 @@ interface HeroCarouselProps {
 
 const HeroCarousel: React.FC<HeroCarouselProps> = ({ images }) => {
   const settings = {
-    dots: true,
+    // dots: true,
     infinite: true,
     speed: 600,
     slidesToShow: 1,
@@ -24,7 +24,8 @@ const HeroCarousel: React.FC<HeroCarouselProps> = ({ images }) => {
   return (
     <Box
       w='100%'
-      py='xl'
+      pt='48px'
+      pb='xl'
       pos='relative'>
       <Slider {...settings}>
         {images.map((image, idx) => (
@@ -36,7 +37,7 @@ const HeroCarousel: React.FC<HeroCarouselProps> = ({ images }) => {
               alt={image.alt || `Slide ${idx + 1}`}
               fit='cover'
               w='100%'
-              h={600}
+              h={750}
             />
           </Box>
         ))}
